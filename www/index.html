@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>Fitify</title>
+    </head>
+    <body>
+
+        <div class="app">
+            <div id="page-header">
+                <h1>Fitify</h1>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" href="character" onclick="document.getElementById('character').style.display='block';document.getElementById('shop').style.display = 'none';document.getElementById('adventure').style.display = 'none';">Character</button>
+                    <button type="button" class="btn btn-default" onclick="document.getElementById('shop').style.display='block';document.getElementById('character').style.display = 'none';document.getElementById('adventure').style.display = 'none'">Shop</button>
+                    <button type="button" class="btn btn-default" onclick="document.getElementById('adventure').style.display='block';document.getElementById('shop').style.display = 'none';document.getElementById('character').style.display = 'none'">Adventure</button>
+                </div>
+                <hr>
+            </div><!--page title-->
+            <div id="body">
+                <div id="character">
+                    Character
+                </div>
+                <div id="shop">
+                        <a href="shop.html">Shop</a>
+                    <ul>
+                        <li>
+                            Item 1
+                        </li>
+                         <li>
+                            Item 2
+                        </li>
+                         <li>
+                            Item 3
+                        </li>
+                         <li>
+                            Item 4
+                        </li>
+                         <li>
+                            Item 5
+                        </li>
+                    </ul>
+                </div>
+                <div id="adventure">
+                    Battle
+                    <ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+                        <li><a href="shop.html">Common Monster 1</a></li>
+                        <li><a href="#">Common Monster 2</a></li>
+                        <li><a href="#">Boss 1</a></li>
+                    </ul>
+                     Missions
+                    <ul>
+                        <li>
+                            Defeat Boss 1
+                        </li>
+                        <li>
+                            Find 5 chickens
+                        </li>
+                        <li>
+                            Refuel with sleep
+                        </li>
+                     </ul>
+                     Accepted Missions
+
+                </div>
+            </div> <!-- body -->
+            <div id="page-footer">
+                    Footer of the app
+            </div>
+        </div>
+
+
+        
+            <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+    </body>
+</html>
