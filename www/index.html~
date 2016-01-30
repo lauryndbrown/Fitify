@@ -30,7 +30,7 @@
             </div><!--page title-->
             <div id="body">
                 <div id="character">
-                    Character
+                    <h3>Character</h3>
                 </div>
                 <div id="shop">
                         <a href="shop.html">Shop</a>
@@ -53,12 +53,14 @@
                     </ul>
                 </div>
                 <div id="adventure">
-                    Battle
+                <div data-role="collapsible">
+                        <h3>Battle</h3>
                     <ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
-                        <li><a href="#">Common Monster 1</a></li>
-                        <li><a href="#">Common Monster 2</a></li>
-                        <li><a href="#">Boss 1</a></li>
-                    </ul>
+                            <li><a href="#">Common Monster 1</a></li>
+                            <li><a href="#">Common Monster 2</a></li>
+                            <li><a href="#">Boss 1</a></li>
+</ul>
+                </div>
                      Missions
                     <ul>
                         <li>
